@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shape Calculator"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageButton
+        android:id="@+id/circle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/square"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageButton
+        android:id="@+id/rectangle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square"
+        app:layout_constraintVertical_bias="0.905"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageButton
+        android:id="@+id/square"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoButton"
+        app:layout_constraintVertical_bias="0.152"
+        app:srcCompat="@drawable/square" />
+
+    <ImageButton
+        android:id="@+id/triangle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/trianglebutton" />
+
+    <TextView
+        android:id="@+id/showanswer"
+        android:layout_width="176dp"
+        android:layout_height="160dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showanswer"
+        app:layout_constraintVertical_bias="0.047" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
